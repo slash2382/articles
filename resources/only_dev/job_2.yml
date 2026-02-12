@@ -1,6 +1,3 @@
-# Job 2 for set1 - used in dev and staging targets
-# Using YAML anchors to avoid duplication
-
 job-config: &job-config
   set1-job-2:
     name: "${bundle.target} - Only Dev Job 2"

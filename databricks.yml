@@ -15,15 +15,15 @@ targets:
   dev:  
     default: true
     workspace:
-      host: https://dbc-fd93b3ec-b7f9.cloud.databricks.com/    
+      host:   
   
 
   staging:
     workspace:
-        host: https://dbc-fd93b3ec-b7f9.cloud.databricks.com/
+        host: 
   
 
   prod:
     workspace:
-        host: https://dbc-fd93b3ec-b7f9.cloud.databricks.com/
+        host: 
    
