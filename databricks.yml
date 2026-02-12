@@ -1,0 +1,29 @@
+bundle:
+  name: demo_project
+
+include:
+  - resources/only_dev/*.yml
+  - resources/shared/*.yml
+
+variables:
+  environment: 
+    default: ${bundle.target}
+  name_suffix:
+    description: "Target specific suffix for the job name"
+
+targets:
+  dev:  
+    default: true
+    workspace:
+      host: https://dbc-fd93b3ec-b7f9.cloud.databricks.com/    
+  
+
+  staging:
+    workspace:
+        host: https://dbc-fd93b3ec-b7f9.cloud.databricks.com/
+  
+
+  prod:
+    workspace:
+        host: https://dbc-fd93b3ec-b7f9.cloud.databricks.com/
+   
